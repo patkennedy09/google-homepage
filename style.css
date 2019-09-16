@@ -1,9 +1,34 @@
 body {
-    
+
 }
 
-h4 {
+li {
+    display: inline;
     font-size: 1em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: regular;
+}
+
+header {
+    background-color: #ddd;
+}
+
+form {
+    display: grid;
+    width: 10em;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    grid-gap: 0.5em;
+    
+}
+
+#logo {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+#search-input {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+footer {
+    background-color: #ddd;
 }
