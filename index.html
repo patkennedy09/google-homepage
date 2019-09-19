@@ -6,21 +6,26 @@
 
     <body>
       <header>
-        <ul>
+        <ul class="left">
             <li>About</li>
             <li>Store</li>
-            <li>Gmail</li>
-            <li>Images</li>
-            <li>Waffle</li>
-            <li><button>Sign In</button></li>
+
+        </ul>
+        <ul class="right">
+          <li>Gmail</li>
+          <li>Images</li>
+          <li>Waffle</li>
+          <li><button>Sign In</button></li>
         </ul>
       </header>
 
       <form>
-        <img src="images/googlelogo.jpg" alt="Google" id="logo">
+        <div id="logo"><img src="logo.png" alt="Google"></div>
         <input type="text" id="search-input">
-        <input type="submit" value="Google Search">
-        <input type="submit" value="I'm Feeling Lucky">
+        <div id="search-buttons">
+          <input type="submit" value="Google Search" id="google-search">
+          <input type="submit" value="I'm Feeling Lucky" id="lucky">
+        </div>
       </form>
 
       <footer>
@@ -28,6 +33,8 @@
             <li>Advertising</li>
             <li>Business</li>
             <li>How Search works</li>
+          </ul>
+          <ul id="footright">
             <li>Privacy</li>
             <li>Terms</li>
             <li>Settings</li>
